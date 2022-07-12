@@ -1,0 +1,289 @@
+
+
+body{
+font-family: arial, sans-serif;
+line-height: 1.4;
+color: #333;
+overflow-x: hidden;
+background-color: white;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(228, 113, 228);
+    color: #fff;   
+    margin-bottom: 0px;
+    border-radius: 3px;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+#navbar ul li a {
+    text-decoration: none;
+    margin: 0 20px 0;
+    color: rgb(51, 33, 33);
+    transition: 0.4s;
+    padding: 10px;
+    font-family:"Poppins" ;
+}
+.ul a:hover{
+    background: #3693ff;
+}
+.icon{
+  margin-right: 100px;
+
+}
+#navbar h2 a{
+    color: #fff;
+    margin-left: 200px;
+    text-decoration: none;
+    padding: 10px;
+}
+#navbar h2 a:hover{
+background: #3693ff;
+color: #fff;
+
+}
+.icon li a img{
+    border-radius: 15px;
+}
+.icon li a img:hover{
+    transform: scale(1.05);
+}
+#introduce{
+    font-size: 15px;
+    
+}
+#introduce h1{
+    color: rgb(252, 246, 246);
+    font-size:  30px;
+    margin-top: 0;
+    font-family: "Poppins";
+    font-weight: bold;
+    margin-left: 50px;
+   
+}
+#introduce p{
+     color: rgb(40, 42, 43);
+      margin-left: 50px;
+}
+#header{
+    margin-top: 0px;
+    background-image: url(img/pikachu.jpg)  ;
+    height: 1000px;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: -150px;
+ 
+
+}
+#introduce{
+    margin-left: 800px;
+    margin-top: 150px;
+}
+#introduce a{
+    color: #3693ff;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #3693ff;
+    border-radius: 10px;
+    font-weight: bold;
+     margin-left: 50px;
+
+}
+#introduce a:hover{
+    background: #3693ff;
+    color: #fff;
+}
+#Information{
+    display: flex;
+}
+#img{
+     margin-left: 300px;
+} 
+#nd {
+    font-size: 15px;
+    margin-left: 130px;
+    margin-top: 100px;
+     font-family: "Poppins";
+}
+#nd a{
+    border: 1px #3693ff solid;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: none ;
+    font-family: "Poppins";
+}
+#nd a:hover{
+    background: #3693ff;
+    color: #fff;   
+}
+.progress-bar{
+    width: 80%;
+    background-size: cover;
+}
+.skill{
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 0 100px 0;
+   width: 300px;
+   height: 7px;
+}
+.skill .i{
+    background-color: #3693ff;
+    width: 85%;
+    border-radius: inherit;
+    height: 7px;
+}
+.skill .ii{
+    background-color: #3693ff;
+    width: 80%;
+    border-radius: inherit;
+    height: 7px;
+}
+.skill .iii{
+    background-color: #3693ff;
+    width: 70%;
+    border-radius: inherit;
+    height: 7px;
+    
+}
+.skill .iiii{
+    background-color: #3693ff;
+    width: 30%;
+    border-radius: inherit;
+    height: 7px;
+    
+}
+.skill .iiiii{
+    background-color: #3693ff;
+    width: 40%;
+    border-radius: inherit;
+    height: 7px;
+}
+.skill .iiiiii{
+    background-color: #3693ff;
+    width: 100%;
+    border-radius: inherit;
+    height: 7px;
+}
+.skillbar{
+display: flex;  
+}
+.skillbar div p{
+  text-align: center;
+}
+.gallery {
+	display: flex;
+    margin-bottom: 16px;
+    
+}
+
+.gallery-item {
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+    margin: 0px 8px;
+}
+
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+   
+}
+
+.gallery-image:hover {
+  
+	transform: scale(1.15);
+}
+.container{
+    text-align: center;
+}
+.container div{
+    justify-content: center;
+}
+#portfolio p{
+    text-align: center;
+    font-family:"Poppins" ;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(61, 230, 230);
+}
+#portfolio div h1{
+     font-family:"Poppins" ;
+     font-size: 26px;
+     color: rgb(138, 145, 145);
+}
+
+
+#blog{
+    text-align: center;
+    font-family:"Poppins" ;
+    
+}
+#s2{
+    background-image: url(img/dataset-original.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.galleryy {
+	display: flex;
+    margin-bottom: 16px;
+    margin-left: 200px;
+}
+#contactt {
+    text-align: center;
+    font-family: "Poppins";
+   
+}
+#contactt h1{
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(61, 230, 230);
+}
+#tt{
+    display: flex;
+    text-align: center;
+    margin-left: 140px;
+}
+.texbox{
+        width: 600px;
+        height: 30px;
+        margin-top: 10px;
+        border: 1px rgb(14, 199, 143) solid;
+        border-radius: 10px;
+        
+}
+.texarea{
+        margin-left: 10px;
+        border: 1px rgb(14, 199, 143) solid;
+        border-radius: 10px;
+        width: 450px;
+}
+#submit p{
+     border: 1px rgb(14, 199, 143) solid;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        width: 100px;
+        margin-left: 700px;
+        font-family:"Poppins" ;
+        color: white;
+        background-color: rgb(122, 236, 202);
+}
+#submit p:hover{
+    background-color: rgb(64, 206, 182);
+}
