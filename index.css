@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+}
+body{
+    font-family: 'Otomanopee One', sans-serif;
+}
+/* .................................. */
+.navigation-bar{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+   
+}
+.nav-top{
+    width: 100%;
+    height: 16px;
+    background-color: #141414;
+}
+.nav-bar{
+    width: 100%;
+    padding: 32px 16px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  
+    
+}
+.nav-menu{
+    width: 100%;
+}
+.nav-bar .nav-menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.nav-bar .nav-menu ul li{
+    transition: 0.3s;
+}
+.nav-bar .nav-menu ul li a{
+    text-decoration: none;
+    color: black;
+   
+}
+.nav-bar .nav-menu ul li:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.cart-icon span{
+    position: absolute;
+    top: 30px;
+    right: 8px;
+    border: white 1px solid;
+    width: 16px;
+    border-radius: 32px;
+    background-color: rgb(248, 248, 248);
+}
+.cart-icon{
+    width: 24px;
+    height: 24px;
+    line-height:24px;
+    border-radius: 50%;
+    background-color: powderblue;
+    text-align: center;
+    cursor: pointer;
+    
+  
+    
+}
+.cart-icon i{
+    transition: 0.3s;
+}
+.cart-icon i:hover{
+    transform: scale(1.3);
+}
+
+.cart-container{
+    position: absolute;
+    background-color: rgb(238, 226, 226);
+    top: 5rem;
+    width: 300px;
+    right: 8px;
+    display: none;
+    overflow: scroll;
+    height: 300px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+.btn-danger {
+  color: white;
+  background-color: #EB5757;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+   cursor: pointer;
+}
+.btn-danger:hover {
+  background-color: #CC4C4C;
+}
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 0 8px;
+   margin-bottom: 60px;
+   
+}
+
+.cart-item:hover{
+background: rgb(175, 175, 134);
+}
+.cart-item div input{
+    width: 30px;
+    border: blue 1px solid;
+    outline: none;  
+    
+   
+}
+.imgg{
+    width: 60px;
+    height: 40px;
+    margin-left: 30%;
+    
+}
+.cart-name div{
+    position: relative;
+}
+
+.cart-name p{
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 150px;
+}
+/* ............................................ */
+.gallery{
+    width: 100%;
+    height: 600px;
+    background-image: url(images/CARO3.jpg);
+    background-size: cover;
+    background-position: center;
+   
+    
+    
+}
+.gallery .gallery-info{
+    color: #FFFFFF;
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    right: 15%;
+  
+}
+.gallery .gallery-info p{
+   margin-top: 8px;
+   line-height: 24px;
+}
+.gallery .gallery-btn{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 16px;
+}
+.gallery .gallery-btn p{
+    border: rgb(201, 235, 240) 1px solid;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 8px 16px;
+    transition: 0.5s;
+}
+.gallery .gallery-btn p:hover{
+    color: black;
+    background-color: whitesmoke;
+     cursor: pointer;
+}
+
+/* ............................................ */
+.d-block{
+    display: block;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+ 
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 24px;
+
+
+}
+.product-item{
+    text-align: center;
+    width: 300px;
+    margin-bottom: 24px;
+    background-color: #e0d4d4;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px lightgray;
+     
+}
+.product-item .product-img{
+    background-color: #F5F5F5;
+    height: 200px;
+
+
+}
+.product-img img{
+    width: 100%;
+    height: 200px;
+}
+.product-img{
+    position: relative;
+}
+.product-img::before{
+    content: "Best-Selling";
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: 0.3s;
+    transition-delay: 0.2s;
+    z-index: 1;
+
+}
+.product-img::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: 0.3s;
+}
+.product-img:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+.product-img:hover::after{
+    height: 100%;
+}
+.product-item .add-cart{
+    border: rgb(226, 211, 226) 1px solid;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 8px 16px;
+    transition: 0.5s;
+    background-color: whitesmoke;
+}
+.product-item .add-cart:hover{
+    color: white;
+    background-color: rgb(94, 215, 231);
+    cursor: pointer;
+}
+/* ............................................ */
+.blog{
+background-color: #888B8E;
+    width: 100%;
+    height: 500px;
+    color: black;
+    background-image: url(images/footer-banner.jpg);
+    background-size: cover;
+    background-position: 0 -280px ;
+    position: relative;
+    line-height: 32px;
+    font-size: 14px;
+}
+.blog .blog-child{
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    
+}
+.blog .blog-child p{
+    margin-bottom: 24px;
+}
+.blog .blog-child div span{
+    border: rgb(9, 190, 235) 1px solid;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: 0.5s;
+    font-size: 14px;
+    background-color: rgb(126, 214, 236);
+    
+}
+.blog .blog-child div span:hover{
+    background-color: rgb(31, 171, 206);
+    color:white ;
+    cursor: pointer;
+}
+/* ...................................... */
+.contact{
+    width: 100%;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    color: black;
+    margin-bottom: 16px;
+    
+}
+.contact-left {
+    margin: auto;
+    width: 40%;
+    line-height: 24px;
+    margin-bottom: 16px;
+   
+}
+.contact-left h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(61, 230, 230);
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+.contact-right{
+    display: flex;
+    text-align: center;
+    margin-left: 140px;
+    flex-wrap: wrap;
+}
+.texbox{
+        width: 600px;
+        height: 30px;
+        margin-top: 10px;
+        border: 1px rgb(14, 199, 143) solid;
+        border-radius: 10px;
+        outline: none;
+
+        
+}
+.texarea{
+        margin-left: 10px;
+        border: 1px rgb(14, 199, 143) solid;
+        border-radius: 10px;
+        width: 450px;
+        outline: none;
+        margin-bottom: 24px;
+}
+.submit p{
+        border: 1px rgb(14, 199, 143) solid;
+        border-radius: 10px;
+        color: white;
+        background-color: rgb(122, 236, 202);
+        transition: 0.5s;
+        margin: auto;
+        width: 150px;
+        padding: 8px 16px;
+        text-align: center;
+}
+.submit p:hover{
+    background-color: rgb(64, 206, 182);
+    color: black;
+     cursor: pointer;
+   
+}
+.footer{
+    width: 100%;
+    height: 120px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-evenly  ;
+    align-items: center;
+    background-color: #33383C;
+}
+
+.footer .icon li{
+    list-style: none;
+    margin: 8px 32px;
+    
+}
+.footer .icon {
+    display: flex;
+
+   
+}
+.footer .icon li i {
+    transition: 0.5s;
+    border: none;
+    transform: scale(1.5);
+}
+.footer .icon li i:hover{
+    transform: scale(2);
+    cursor: pointer;
+    
+}
+#contact{
+    width: 100%;
+}
+
+/* ...................................... */
+
+.contai{
+    width: 100%;
+    text-align: center;
+}
+.contai h1{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+}
+.contai h1::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: crimson;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+#Galle input{
+    display: none;
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+.top-content{
+    background-color: rgb(235, 232, 232);
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px lightgray;
+}
+.top-content h3{
+    height: 100%;
+    background-color: lightgray;
+    line-height: 60px;
+    padding: 0 50px;
+    color: white;
+}
+.top-content label{
+   
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.top-content label:hover{
+    color: black;
+    
+}
+.photo-gallery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.pic{
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px lightgray;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.pic::before{
+    content: "PHOTO GALLERY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: 0.3s;
+    transition-delay: 0.2s;
+    z-index: 1;
+
+}
+.pic::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: 0.3s;
+}
+.pic:hover::after{
+    height: 100%;
+}
+.pic:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+#check1:checked ~.contai .photo-gallery .pic{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: 0.5s;
+}
+#check2:checked ~.contai .photo-gallery .modern{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    
+}
+#check2:checked ~.contai .photo-gallery .Vintage,
+#check2:checked ~.contai .photo-gallery .furniture{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+#check3:checked ~.contai .photo-gallery .Vintage{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    
+}
+#check3:checked ~.contai .photo-gallery .modern,
+#check3:checked ~.contai .photo-gallery .furniture{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+#check4:checked ~.contai .photo-gallery .furniture{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    
+}
+#check4:checked ~.contai .photo-gallery .modern,
+#check4:checked ~.contai .photo-gallery .Vintage{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+#Galle{
+    width: 100%;
+    height: 700px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(248, 244, 244,0.2);
+}
+
+/* moblie */
+
+.nav__bar-btn{
+    width: 28px;
+    height: 28px;
+    display: none;
+}
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.3s;
+}
+.nav-moblie{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: white;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.nav-moblie__list{
+    margin-top: 24px;
+}
+.nav-moblie__link{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.4rem;
+
+}
+.nav-input:checked ~ .nav__overlay {
+    display: block;
+
+}
+.nav-input:checked ~ .nav-moblie{
+     transform: translateX(0%);
+     opacity: 1;
+
+}
+.nav-mobie__close{
+    width: 28px;
+    height: 28px;
+    font-size: 1.4rem;
+    color: #666;
+    position: absolute;
+    top: 0.4rem;
+    right: 1rem;
+}
+@media(max-width:1023px){
+    .nav__bar-btn{
+        display: block;
+    }
+    .nav-menu{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:1023px) {
+     h1{
+        font-size: 15px;
+    }
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
